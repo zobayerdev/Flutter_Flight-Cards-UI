@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter_flight_ui/home_screen.dart';
+import 'package:flutter_flight_ui/presentation/flight_screen.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: FlightScreen(),
     );
   }
 }
