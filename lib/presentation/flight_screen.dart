@@ -131,10 +131,10 @@ class _FlightScreenState extends State<FlightScreen>
                 controller: tabController,
                 children: [
                   flightCard(),
-                  Center(
+                  const Center(
                     child: Text("Business"),
                   ),
-                  Center(
+                  const Center(
                     child: Text("Analysis"),
                   ),
                 ],
@@ -185,7 +185,7 @@ class _FlightScreenState extends State<FlightScreen>
                                     child: Transform(
                                       transform:
                                           Matrix4.translationValues(0, 10, 0),
-                                      child: RotatedBox(
+                                      child: const RotatedBox(
                                         quarterTurns: 1,
                                         child: Icon(
                                           Icons.flight,
@@ -212,8 +212,8 @@ class _FlightScreenState extends State<FlightScreen>
                             children: [
                               Expanded(
                                 child: Container(
-                                  padding: EdgeInsets.only(left: 20),
-                                  child: Text(
+                                  padding: const EdgeInsets.only(left: 20),
+                                  child: const Text(
                                     'Emirates',
                                     style: TextStyle(
                                       backgroundColor: ColorPicker.primaryColor,
@@ -274,17 +274,17 @@ class _FlightScreenState extends State<FlightScreen>
           children: [
             Text(
               time,
-              style: TextStyle(
+              style: const TextStyle(
                 color: ColorPicker.backGroundColor,
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 4,
             ),
             Text(
               location,
-              style: TextStyle(
+              style: const TextStyle(
                 color: ColorPicker.backGroundColor,
                 fontSize: 20,
               ),
