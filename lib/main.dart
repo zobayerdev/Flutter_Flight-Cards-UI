@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter_flight_ui/presentation/flight_screen.dart';
 
-// void main() => runApp(
-//       DevicePreview(
-//         enabled: true,
-//         tools: const [
-//           ...DevicePreview.defaultTools,
-//         ],
-//         builder: (context) => const MyApp(),
-//       ),
-//     );
+void main() => runApp(
+      DevicePreview(
+        enabled: true,
+        tools: const [
+          ...DevicePreview.defaultTools,
+        ],
+        builder: (context) => const MyApp(),
+      ),
+    );
 
-void main() {
-  runApp(const MyApp());
-}
+// void main() {
+//   runApp(const MyApp());
+// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
